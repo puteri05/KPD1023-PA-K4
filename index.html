@@ -1,23 +1,154 @@
 <html>
   <head>
-    <title>Berita Harian</title>
+    <title>BERITA HARIAN</title>
     <style>
-      
+      .header {
+        margin: auto;
+        overflow: hidden;
+        width: 100%;
+      }
+      .header_logo {
+        padding: 90px;
+        float: left;
+      }
+      .header_logo img {
+        width: 90px;
+      }
+      .header_greeting {
+        float: left;
+        margin: auto;
+        text-align: center;
+        padding: 90px;
+        font-size: 10mm;
+        font-weight: bold;
+      }
+      .social-icon {
+        padding: 5px;
+        border-radius: 50%;
+        margin-top: 50px;
+        float: right;
+        padding-bottom: 50px;
+      }
+      .social-icon img {
+        width: 20px;
+      }
+      .nav {
+        list-style: none;
+        background: black;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: flex;
+        align-items: center;
+      }
+      .nav ul {
+        list-style-type: none;
+        margin: auto;
+      }
+      .nav li {
+        float: right;
+        color: white;
+      }
+      .nav a {
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+        color: white;
+      }
+      .nav li:hover {
+        background: antiquewhite;
+        color: black;
+        font-weight: bold;
+      }
+      .nav a:hover {
+        color:black;
+        font-weight: bold;
+      }
+      .spacer {
+        flex-grow: 1;
+      }
+      .formright {
+        padding: 10px;
+      }
+      @media (max-width: 800px) {
+        nav .formright {
+          display: none;
+        }
+      }
+      .content {
+        background-color: gray;
+      }
+      table {
+        background-color: white;
+        border: 5px solid lightgray;
+        text-align: center;
+        width: 500px;
+        margin: auto;
+      }
+      .white {
+        background-color: rgb(255,255,255)
+      }
+      .white {
+        background-color: rgb(255,255,255)
+      }
+      .gold {
+        background-color: rgb(255,215,0)
+      }
+      .silver {
+        background-color: rgb(192,192,192)
+      }
+      .brown {
+        background-color: rgb(165,42,42)
+      }
+      .lightgreen {
+        background-color: rgb(144, 238, 144)
+      }
+      .slider {
+        background-color: white;
+      }
+     .slider img{
+       background-color: white;
+         width: 70px;
+      }
+      .footer {
+        text-align: center;
+        padding: 5px;
+        background-color: black;
+        color: white;
+      }
+      *{
+        box-sizing: border-box;
+        margin: 0;
+      }
+    </style>
   </head>
-  
+
   <body>
-    <!--HEADER-->
+
+    <!--Header-->
     <div class="header">
-      <div class="header_logo"><img src="logo.png"></div>
-        <h1>BERITA HARIAN</h1>
+      <div class="header_logo"><img src="images/logo.png"></div>
+      <div class="header_greeting">
+        BERITA HARIAN
+      </div>
+      <div class="social-icon">
+        <img src="images/youtube.png">
+        <img src="images/instagram.png">
+        <img src="images/twitter.png">
+        <img src="images/facebook.png">
       </div>
     </div>
-    
-    <!--MENU-->
-    
-    <!--CONTENT-->
-    
-    <!--FOOTER-->
-    
-  </body>
-</html>
+
+    <!--Menu-->
+    <div class="nav">
+      <li><a href="#">BERITA</a></li>
+      <li><a href="#">SUKAN</a></li>
+      <li><a href="#">DUNIA</a></li>
+      <li><a href="#">HIBURAN</a></li>
+
+      <div class="spacer"></div>
+
+      <form class="formright">
+        <input type="text" placeholder="Masuk kata kunci">
+        <button type="submit">Cari</button>
+      </form>
+    </div>
